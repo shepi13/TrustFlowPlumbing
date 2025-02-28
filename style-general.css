@@ -1,0 +1,266 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236,204,162);
+}
+
+div#header-container {
+    width: 100%;
+    background-color: rgb(200,240,255);
+    box-shadow: 5px 5px 5px rgba(0,0,50, 0.2);
+}
+
+div#top-bar-logo {
+    padding: 10px;
+}
+
+div#top-bar-motto {
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600
+}
+
+/*
+div#top-bar-logo img {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+*/
+
+div#contact-info-top {
+    float: right;
+    text-align: left;
+    padding-right: 10%;
+}
+
+div#contact-info-top a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+div#contact-info-top p {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+div#contact-info-top #contact-number {
+    color:cadetblue;
+    font-size: 35px;
+    font-weight: 700;
+    display: block;
+}
+
+div#nav-bar {
+    box-shadow: 5px 5px 5px cadetblue;
+    /*border: solid 1px mediumaquamarine;
+    /*background-color:mediumaquamarine;*/
+    background-color: rgb(170,230,245);
+    border-radius: 4px;
+    margin-right: -10px;
+}
+
+ul.clearfix {
+    zoom:1;
+}
+ul.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.nav-bar-web-list {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 350;
+    text-transform: capitalize;
+    line-height: 1.3em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    border-top: solid 1px mediumaquamarine;
+    border-left: solid 1px mediumaquamarine;
+    border-radius: inherit;
+}
+
+ul.nav-bar-web-list li {
+    float: left;
+    margin: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+ul.nav-bar-web-list li.active {
+    background-color: cadetblue;
+    margin: 1px;
+    border: 4px solid cadetblue;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    border-radius: 3px;
+}
+
+ul.nav-bar-web-list li.active a:hover {
+    border-radius: 3px;
+}
+
+ul.nav-bar-web-list li a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+ul.nav-bar-web-list li a:hover {
+    background-color: #CFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    border: 1px solid rgb(236,204,162);
+    margin: -1px;
+}
+
+#right-nav-element {
+    float: right;
+    border: 1px solid midnightblue;
+    background-color: navy;
+    color: white;
+    margin-right: 10%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+#right-nav-element a:hover {
+    border: none;
+    margin: 0;
+    color: black;
+    border-radius: 5px;
+    background-color:rgb(180, 230, 255);
+}
+
+div#footer-container {
+    width: 100%;
+    background-color: rgb(236,204,162);
+}
+
+div#copyright-notice {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px 40px 40px 40px;
+}
+
+.row-container {
+    clear: both;
+    overflow: hidden;
+}
+
+.left-float {
+    float: left;
+}
+
+.right-float {
+    float: right;
+}
+
+div#footer-company-info {
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+#footer-company-name {
+    width: 475px;
+}
+
+.footer-info-col {
+    float: left;
+    width: 250px;
+    padding-left: 25px;
+}
+
+.footer-info-col h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+ul.footer-info-links {
+    overflow: hidden;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+ul.footer-info-links li {
+    margin-bottom: 7px;
+}
+
+ul.footer-info-links a {
+    text-decoration: none;
+    color: rgb(31, 52, 60);
+}
+
+ul.footer-info-links a:hover {
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.text-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer-company-name h5 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: 'Georgia', 'Times New Roman';
+    font-weight:800;
+}
+
+p#footer-motto {
+    font-size: 25px;
+    font-weight:500;
+    margin-top: 7px;
+}
+
+#footer-company-name p {
+    font-family: 'Georgia', 'Times New Roman';
+}
+
+div#main-body {
+    background-color: white;
+}
+
+div#content {
+    max-width: 1000px;
+    padding-bottom: 100px;
+}
+
+div#content p {
+    font-size: 25px;
+}
+
+.dropdown-content {
+    padding-top:5px;
+    position: absolute;
+    display: none;
+    font-weight: 600;
+}
+
+.dropdown-links {
+    box-shadow: inset 3px 5px 3px rgb(0,50,50,0.4);
+    background-color: rgb(150,220,230);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

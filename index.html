@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TrustFlow Plumbing</title>
+    <link href="style-general.css" rel="stylesheet" type="text/css"/>
+    <link href="style-web.css" rel="stylesheet" media="(min-width: 800px)", type="text/css"/>
+    <link href="./favicon.png" rel="icon"/>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header-container').load('./header.html', function(){
+                $('a[href="index.html"]').parents('li').addClass('active');
+            });
+            $('#footer-container').load('./footer.html');
+        })
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="main-body">
+        <div id="content">
+            <h1>We Provide Reliable and Quick Solutions for any Plumbing Needs</h1>
+            <p>We provide fast, reliable fixes for all your plumbing problems. We're available 24/7 for any plumbing
+                emergencies, no matter what the issue is.
+            </p>
+            <h2>Serving the Port Charlotte/Garden Cove areas</h2>
+            <p>We are based out of the Port Charlotte area, and serve surrounding locations including:</p>
+            <ul>
+                <li>Florida</li>
+                <li>Florida</li>
+                <li>Florida</li>
+                <li>Florida</li>
+                <li>Florida</li>
+            </ul>
+            <h2>
+                We offer a wide variety of services, ranging from routine maintenance, to new installations, to emergencies</h2>
+            </h2>
+            <h3>
+                For example, we specialize in:
+            </h3>
+            <ul>
+                <li>Bathtubs</li>
+                <li>Sinks</li>
+                <li>Clogged Drains</li>
+                <li>Flooding</li>
+                <li>Sump Pumps</li>
+                <li>Sewer Line Inspections</li>
+            </ul>
+            <h3>And more!</h3>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>

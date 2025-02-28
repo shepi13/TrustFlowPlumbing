@@ -1,0 +1,12 @@
+div#header-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+div#content {
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 650px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TrustFlow Plumbing</title>
+    <link href="style-general.css" rel="stylesheet" type="text/css"/>
+    <link href="style-web.css" rel="stylesheet" media="(min-width: 800px)", type="text/css"/>
+    <link href="./favicon.png" rel="icon"/>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header-container').load('./header.html', function(){
+                $('a[href="about.html"]').parents('li').addClass('active');
+            });
+            $('#footer-container').load('./footer.html');
+        })
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="main-body">
+        <div id="content"></div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>
