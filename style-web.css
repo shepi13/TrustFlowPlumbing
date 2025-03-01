@@ -6,7 +6,5 @@ div#header-container {
 
 div#main-body {
     padding-top: 250px;
-    padding-left: 50px;
-    padding-right: 50px;
     min-height: 850px;
 }

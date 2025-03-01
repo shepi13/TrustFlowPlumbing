@@ -280,4 +280,29 @@ div.image-container-center-align {
 
 div.main-text-content {
     max-width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+div.content-right {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+div.mid-separator-background {
+    background-color:lavender;
+    margin: 0;
+    padding: 0;
+}
+
+ul#location-list-cities {
+    column-count: 3;
+}
+
+
+ul#location-list-cities li {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
