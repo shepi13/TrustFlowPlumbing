@@ -255,14 +255,6 @@ p#footer-motto {
 div#main-body {
     background-color: white;
 }
-div#content {
-    /*max-width: 1000px;*/
-    padding-bottom: 100px;
-}
-
-div#content p {
-    font-size: 25px;
-}
 
 .dropdown-content {
     padding-top:5px;
@@ -305,6 +297,7 @@ div.main-text-content {
     padding-top: 0;
     padding-bottom: 20px;
     padding-left: 50px;
+    font-size: 25px;
 }
 
 div.content-right {
