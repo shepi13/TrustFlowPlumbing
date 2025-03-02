@@ -52,6 +52,7 @@ div#contact-info-top p {
 }
 
 div#contact-info-top #contact-number {
+    font-family:''Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
     -webkit-text-fill-color:darkorange;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
