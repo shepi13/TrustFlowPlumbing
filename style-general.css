@@ -301,9 +301,9 @@ div.image-container-center-align {
 }
 
 div.main-text-content {
-    max-width: 1000px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    max-width: 1200px;
+    padding-top: 0;
+    padding-bottom: 20px;
     padding-left: 50px;
 }
 
@@ -320,11 +320,44 @@ div.mid-separator-background {
 }
 
 ul#location-list-cities {
-    column-count: 3;
+    list-style-type: none;
+    padding-left: 0;
 }
 
-
 ul#location-list-cities li {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 16px;
+    margin-bottom: 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+div#about-main h1 {
+    font-size: 40px;
+}
+
+div#about-main h2 {
+    font-size: 29px;
+    padding-top: 20px;
+}
+
+div#about-main h3 {
+    font-size: 22px;
+}
+
+div#about-main {
+    padding-bottom: 10px;
+}
+
+div#about-contact {
+    padding-top: 15px;
+}
+
+.undecorated-link {
+    color: black;
+    text-decoration: none;
+}
+
+div#about-locations {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
