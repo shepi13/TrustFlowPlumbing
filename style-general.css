@@ -1,7 +1,9 @@
+/* (General / Default) formatting */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     background-color: rgb(236,204,162);
 }
 
@@ -9,6 +11,41 @@ div#main-body {
     padding-top: 250px;
     min-height: 850px;
 }
+
+.row-container {
+    clear: both;
+    overflow: hidden;
+}
+
+.left-float {
+    float: left;
+}
+
+.right-float {
+    float: right;
+}
+
+div.main-text-content {
+    max-width: 1500px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+div.content-right {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+div.mid-separator-background {
+    background-color:lavender;
+    margin: 0;
+    padding: 0;
+}
+
+/* Formatting for navbar/header in header.html */
 
 div#header-container {
     width: 100%;
@@ -41,12 +78,6 @@ div#top-bar-motto {
     font-size: 22px;
     font-weight: 600
 }
-
-/*
-div#top-bar-logo img {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
-}
-*/
 
 div#contact-info-top {
     float: right;
@@ -180,96 +211,6 @@ ul.nav-bar-web-list li a:hover {
     background-color:rgb(180, 230, 255);
 }
 
-div#footer-container {
-    width: 100%;
-    background-color: rgb(236,204,162);
-}
-
-div#copyright-notice {
-    font-size: 15px;
-    font-weight: 300;
-    padding: 5px 40px 40px 40px;
-}
-
-.row-container {
-    clear: both;
-    overflow: hidden;
-}
-
-.left-float {
-    float: left;
-}
-
-.right-float {
-    float: right;
-}
-
-div#footer-company-info {
-    padding-left: 150px;
-    padding-top: 30px;
-}
-
-#footer-company-name {
-    width: 475px;
-}
-
-.footer-info-col {
-    float: left;
-    width: 250px;
-    padding-left: 25px;
-}
-
-.footer-info-col h5 {
-    font-size: 18px;
-    margin-bottom: 0;
-}
-
-ul.footer-info-links {
-    overflow: hidden;
-    list-style-type: none;
-    text-transform: capitalize;
-    font-size: 18px;
-    padding-left: 0;
-    padding-top: 0;
-}
-
-ul.footer-info-links li {
-    margin-bottom: 7px;
-}
-
-ul.footer-info-links a {
-    text-decoration: none;
-    color: rgb(31, 52, 60);
-}
-
-ul.footer-info-links a:hover {
-    color: black;
-    font-weight: 700;
-    font-size: 17px;
-}
-
-.text-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-#footer-company-name h5 {
-    margin-top: 25px;
-    font-size: 30px;
-    font-family: 'Georgia', 'Times New Roman';
-    font-weight:800;
-}
-
-p#footer-motto {
-    font-size: 25px;
-    font-weight:500;
-    margin-top: 7px;
-}
-
-#footer-company-name p {
-    font-family: 'Georgia', 'Times New Roman';
-}
-
 div#main-body {
     background-color: white;
 }
@@ -299,6 +240,11 @@ div#index-location-header {
     margin-bottom: 50px;
 }
 
+div#index-services-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* Formatting for about.html content */
 
 #headshot-container {
@@ -322,26 +268,6 @@ div#index-location-header {
 div.image-container-center-align {
     display: flex;
     align-items: center;
-}
-
-div.main-text-content {
-    max-width: 1500px;
-    padding-top: 0;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    font-size: 25px;
-}
-
-div.content-right {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 50px;
-}
-
-div.mid-separator-background {
-    background-color:lavender;
-    margin: 0;
-    padding: 0;
 }
 
 ul#location-list-cities {
@@ -408,4 +334,81 @@ div#about-locations h1 {
 
 div#about-locations h2 {
     font-size: 29px;
+}
+
+/* Styling for footer.html */
+
+div#footer-container {
+    width: 100%;
+    background-color: rgb(236,204,162);
+}
+
+div#copyright-notice {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px 40px 40px 40px;
+}
+
+div#footer-company-info {
+    padding-left: 150px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#footer-company-name {
+    width: 475px;
+}
+
+.footer-info-col {
+    float: left;
+    width: 250px;
+    padding-left: 25px;
+}
+
+.footer-info-col h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+ul.footer-info-links {
+    overflow: hidden;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+ul.footer-info-links li {
+    margin-bottom: 7px;
+}
+
+ul.footer-info-links a {
+    text-decoration: none;
+    color: rgb(31, 52, 60);
+}
+
+ul.footer-info-links a:hover {
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#footer-company-name h5 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: 'Georgia', 'Times New Roman';
+    font-weight:800;
+}
+
+p#footer-motto {
+    font-size: 25px;
+    font-weight:500;
+    margin-top: 7px;
+}
+
+#footer-company-name p {
+    font-family: 'Georgia', 'Times New Roman';
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
