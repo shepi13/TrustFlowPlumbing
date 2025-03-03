@@ -225,7 +225,7 @@ div#main-body {
 }
 
 .dropdown-links {
-    box-shadow: inset 3px 5px 3px rgb(0,50,50,0.4);
+    box-shadow: inset 0px 0px 10px 2px rgb(0,50,50,0.4);
     background-color: rgb(150,220,230);
 }
 
@@ -239,14 +239,31 @@ div#index-selling-points li {
     margin: 10px;
 }
 
+button#index-call-us {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 35px 40px 35px 40px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: rgb(255, 192, 203);
+    border-width: 3px;
+    box-shadow: 3px 3px 3px 3px rgba(72, 61, 139, 0.5);
+}
+
+button#index-call-us:hover {
+    background-color:hotpink;
+}
+
 div#index-gallery-slideshow h3 {
     margin-top:200px;
 }
 
 img.index-gallery-image {
     margin: 30px;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     /*object-fit: cover;*/
     border-radius: 5px;
 }
