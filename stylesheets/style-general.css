@@ -176,6 +176,7 @@ ul.nav-bar-web-list li.active {
 
 ul.nav-bar-web-list li.active a:hover {
     border-radius: 3px;
+    background-color: #ADD;
 }
 
 ul.nav-bar-web-list li a {
