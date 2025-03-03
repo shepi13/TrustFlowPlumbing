@@ -297,6 +297,7 @@ div#main-body {
     font-size: 20px;
     font-weight: 600;
     padding-right: 50px;
+    padding-left: 40px;
 }
 
 #headshot-container img {
@@ -314,7 +315,7 @@ div.image-container-center-align {
 }
 
 div.main-text-content {
-    max-width: 1200px;
+    max-width: 1500px;
     padding-top: 0;
     padding-bottom: 20px;
     padding-left: 50px;
@@ -374,9 +375,21 @@ div#about-contact {
     text-decoration: none;
 }
 
+div#about-licensing {
+    padding-right: 135px;
+    text-align: center;
+}
+div#about-licensing h3 {
+    font-size: 25px;
+}
+div#about-licensing p {
+    font-size: 20px;
+}
+
 div#about-locations {
     padding-bottom: 30px;
     margin-bottom: 0;
+    max-width: 1200px;
 }
 
 div#about-locations h1 {
