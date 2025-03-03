@@ -254,11 +254,11 @@ div#main-body {
 
 .index-fade {
     animation-name: index-fade;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
   
 @keyframes index-fade {
-    from {filter: brightness(0%)} 
+    from {filter: brightness(30%)} 
     to {filter: none}
 }
 
@@ -283,16 +283,12 @@ button#index-call-us:hover {
     background-color:hotpink;
 }
 
-div#index-gallery-slideshow h3 {
-    margin-top:200px;
-}
-
 div.index-gallery-image-container {
     display: none;
 }
 
 div.index-gallery-image-container img {
-    margin: 30px;
+    margin: 15px;
     width: 400px;
     height: 400px;
     /*object-fit: cover;*/
