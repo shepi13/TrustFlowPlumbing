@@ -70,7 +70,7 @@ div#contact-info-top p {
 }
 
 div#contact-info-top #contact-number {
-    font-family:''Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-text-fill-color:darkorange;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
@@ -86,6 +86,7 @@ div#contact-info-top #contact-number {
     -webkit-text-fill-color:rgb(100,160,180);;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 5px;
 }
 
@@ -287,6 +288,15 @@ div#main-body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Formating for index.html content */
+
+div#index-location-header {
+    margin-top: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 /* Formatting for about.html content */
