@@ -258,8 +258,8 @@ div#main-body {
 }
   
 @keyframes index-fade {
-    from {opacity: .7} 
-    to {opacity: 1}
+    from {filter: brightness(0%)} 
+    to {filter: none}
 }
 
 div#index-selling-points li {
