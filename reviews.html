@@ -7,13 +7,13 @@
     <link href="style-small.css" rel="stylesheet" media="(max-width:1650px)", type="text/css"/>
     <link href="style-tiny.css" rel="stylesheet" media="(max-width: 1200px)", type="text/css"/>
     <link href="favicon.png" rel="shortcut icon"/>
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="includes/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('#header-container').load('./header.html', function(){
+            $('#header-container').load('includes/header.html', function(){
                 $('a[href="reviews.html"]').parents('li').addClass('active');
             });
-            $('#footer-container').load('./footer.html');
+            $('#footer-container').load('includes/footer.html');
         })
     </script>
 </head>
