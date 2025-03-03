@@ -9,11 +9,26 @@
     <link href="favicon.png" rel="shortcut icon"/>
     <script src="includes/jquery-3.7.1.min.js"></script>
     <script>
+        let slideIndex = 0;
+        function startSlideShow() {
+            let i;
+            let slides = document.getElementsByClassName("index-gallery-image-container");
+            for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex += 2;
+            slideIndex %= slides.length;
+            slides[slideIndex].style.display = "block";
+            slides[(slideIndex+1) % slides.length].style.display = "block";
+            setTimeout(startSlideShow, 10000);
+        }
+
         $(document).ready(function(){
             $('#header-container').load('includes/header.html', function(){
                 $('a[href="index.html"]').parents('li').addClass('active');
             });
             $('#footer-container').load('includes/footer.html');
+            startSlideShow();
         })
     </script>
 </head>
@@ -44,22 +59,22 @@
                     <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_0573.jpeg"/>
                     </div>
-                    <div class="index-gallery-image-container index-fade" style="display:none">
+                    <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_1113.jpeg"/>
                     </div>
-                    <div class="index-gallery-image-container index-fade" style="display:none">
+                    <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_3197.jpeg"/>
                     </div>
-                    <div class="index-gallery-image-container index-fade" style="display:none">
+                    <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_5324.jpeg"/>
                     </div>
-                    <div class="index-gallery-image-container index-fade" style="display:none">
+                    <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_7546.png"/>
                     </div>
-                    <div class="index-gallery-image-container index-fade" style="display:none">
+                    <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_8381.jpeg"/>
                     </div>
-                    <div class="index-gallery-image-container index-fade" style="display:none">
+                    <div class="index-gallery-image-container index-fade">
                         <img src="images/jobpics/IMG_8805.jpeg"/>
                     </div>
                 </div>

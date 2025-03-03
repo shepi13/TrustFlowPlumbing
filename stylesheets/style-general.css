@@ -287,6 +287,10 @@ div#index-gallery-slideshow h3 {
     margin-top:200px;
 }
 
+div.index-gallery-image-container {
+    display: none;
+}
+
 div.index-gallery-image-container img {
     margin: 30px;
     width: 400px;
