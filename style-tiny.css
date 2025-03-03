@@ -1,0 +1,7 @@
+div#header-container {
+    position: static;
+}
+
+div#main-body {
+    padding-top: 50px;
+}

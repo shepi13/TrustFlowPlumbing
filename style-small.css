@@ -1,3 +1,39 @@
-#top-bar-motto {
+/* Resize Top Bar for Small sites and don't show motto */
+
+div#top-bar-motto {
     display: none;
+}
+div#contact-info-top {
+    padding-right: 20px;
+}
+
+div#top-bar-logo img {
+    width: 350px;
+}
+div#top-bar-other {
+    margin-left: 400px;
+}
+
+ul.nav-bar-web-list {
+    font-size: 16px;
+}
+ul.nav-bar-web-list li {
+    float: left;
+    margin: 3px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#right-nav-element {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+
+/* Resize headshot on about page for small sites */
+
+#headshot-container {
+    padding-right: 5px;
+}
+#headshot-container img {
+    width: 250px;
 }

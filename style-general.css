@@ -5,15 +5,32 @@ body {
     background-color: rgb(236,204,162);
 }
 
+div#main-body {
+    padding-top: 250px;
+    min-height: 850px;
+}
+
 div#header-container {
     width: 100%;
     background-color: rgb(200,240,255);
     box-shadow: 5px 5px 5px rgba(0,0,50, 0.2);
     max-height: 300px;
+    padding-bottom: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
+
 
 div#top-bar-logo {
     padding: 10px;
+}
+
+div#top-bar-logo img {
+    width: 450px;
+}
+div#top-bar-other {
+    margin-left: 500px;
 }
 
 div#top-bar-motto {
@@ -282,6 +299,10 @@ div#main-body {
     padding-right: 50px;
 }
 
+#headshot-container img {
+    width: 500px;
+}
+
 #headshot-text {
     font-size: 22px;
     font-weight: 800;
@@ -315,6 +336,7 @@ div.mid-separator-background {
 ul#location-list-cities {
     list-style-type: none;
     padding-left: 0;
+    column-count: 2;
 }
 
 ul#location-list-cities li {
@@ -326,6 +348,8 @@ ul#location-list-cities li {
 
 div#about-main h1 {
     font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 div#about-main h2 {
@@ -351,6 +375,14 @@ div#about-contact {
 }
 
 div#about-locations {
-    padding-bottom: 0;
+    padding-bottom: 30px;
     margin-bottom: 0;
+}
+
+div#about-locations h1 {
+    font-size: 35px;
+}
+
+div#about-locations h2 {
+    font-size: 29px;
 }
