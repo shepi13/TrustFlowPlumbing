@@ -313,6 +313,7 @@ div.gallery-row {
 div.gallery-image {
     margin: 5px;
     border: 2px solid #aaa;
+    width: 325px;
 }
 div.gallery-image:hover {
     border: 1px solid black;
