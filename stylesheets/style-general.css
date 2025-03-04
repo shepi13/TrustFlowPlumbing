@@ -340,15 +340,15 @@ div.gallery-row {
 div.gallery-image {
     margin: 5px;
     border: 2px solid #aaa;
-    width: 375px;
+    width: 360px;
 }
 div.gallery-image:hover {
     border: 1px solid black;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
 }
 div.gallery-image img {
-    width: 375px;
-    height: 375px;
+    width: 360px;
+    height: 360px;
 }
 div.gallery-description {
     padding: 15px;
