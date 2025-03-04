@@ -74,6 +74,7 @@ div#header-container {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 
@@ -314,6 +315,15 @@ div#index-services-header {
     padding-bottom: 20px;
 }
 
+div#index-location-list {
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+div#index-separator-2 {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
 /* Formatting for gallery.html content */
 
 div#gallery-main {
@@ -330,15 +340,15 @@ div.gallery-row {
 div.gallery-image {
     margin: 5px;
     border: 2px solid #aaa;
-    width: 325px;
+    width: 375px;
 }
 div.gallery-image:hover {
     border: 1px solid black;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
 }
 div.gallery-image img {
-    width: 325px;
-    height: 325px;
+    width: 375px;
+    height: 375px;
 }
 div.gallery-description {
     padding: 15px;
@@ -377,8 +387,8 @@ ul#location-list-cities {
 }
 
 ul#location-list-cities li {
-    font-size: 16px;
-    margin-bottom: 1px;
+    font-size: 20px;
+    margin-bottom: 3px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 }
