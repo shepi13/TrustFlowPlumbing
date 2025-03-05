@@ -7,6 +7,11 @@ body {
     background-color: rgb(236,204,162);
 }
 
+.page-header {
+    text-align: center;
+    font-style: italic;
+}
+
 div#main-body {
     padding-top: 250px;
     min-height: 850px;
