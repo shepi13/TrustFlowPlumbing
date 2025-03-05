@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TrustFlow Plumbing</title>
+    <link href="stylesheets/style-general.css" rel="stylesheet" type="text/css"/>
+    <link href="stylesheets/style-small.css" rel="stylesheet" media="(max-width:1650px)", type="text/css"/>
+    <link href="stylesheets/style-tiny.css" rel="stylesheet" media="(max-width: 1200px)", type="text/css"/>
+    <link href="favicon.png" rel="shortcut icon"/>
+    <script src="includes/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header-container').load('includes/header.html', function(){
+                $('a[href="about.html"]').parents('li').addClass('active');
+            });
+            $('#footer-container').load('includes/footer.html');
+        })
+
+        let next_id=1;
+
+        function next_element(is_next) {
+            return (function() {
+                if (is_next) {next_id += 1;}
+                else {next_id -= 1;}
+                $('html, body').animate({
+                    scrollTop: ($('#' + next_id).offset().top)
+                }, 1000);
+            });
+        };
+
+        $('.about-next-section').click(next_element(true));
+        $('.about-previous-section').click(next_element(false));
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="main-body">
+        <div class="image-container-center-align right-float content-right">
+            <div id="headshot-container">
+                <img src="images/headshot.jpg"/>
+                <p id="headshot-text">Trevor Scott</p> 
+                <p>Owner and Master Plumber</p>
+            </div>
+        </div>
+        <div id="about-main" class="main-text-content">
+            <h1>Because Trust Flows Both Ways</h1>
+            <p>
+                We are a local husband and wife plumbing team based in the Gardens of Gulf Cove, 
+                Port Charlotte, Florida neighborhood; as well as servicing nearby communities. 
+                We strive to provide big quality service, while keeping a small-town local feel.  
+            </p>
+            <p>
+                We price each job in person, since there are so many variables that could affect 
+                the price when it comes to Plumbing. However, we do offer FREE estimates. As such, 
+                our Plumber will always provide a price range upfront for your approval, before 
+                starting any work.   
+            </p>
+            <p>Plumbing is an expansive field of skilled labor, with unlimited unique situations 
+                which require the creative thinking of a Master Plumber. Plus, the expensive risk 
+                of potential water damage alone makes it worth it to put your trust in hiring a 
+                professional plumber.  
+            </p>
+            <h2>Residential Home Plumbing Service</h2>
+            <h3>Types of Residences We Service: Houses, Condos, Apartments, Duplexes, 
+                Townhouses & Mobile Homes</h3>
+            <p>We have extensive experience with emergencies, repairs, installations, and remodels, covering
+                all of your plumbing needs.
+            </p>
+<!--                Make this a list?           -->
+            <p>This includes everything from kitchen and bathroom connections, dishwashers, 
+                and refrigerator ice lines to whole house re-pipes.
+            </p>
+            <p>And of course we fix clogs and leaks!</p>
+            <p>Aside from regular business hours, we also offer emergency after hours for all of your
+                plumbing issues.
+            </p>
+            <h2>Servicing Small Businesses</h2>
+            <p>We also have experience with larger installations for small businesses and have worked in 
+                detail with outdoor systems such as outdoor showers or specialty foot & dog washing stations</p>
+        </div>
+        <br clear="both">
+        <div class="mid-separator-background">
+            <div id="about-licensing" class="right-float content-right">
+                <h3>Licensed, Insured, and Bonded</h3>
+                <p>Certified Florida Contractor’s License#: CFC1432238</p>
+            </div>
+            <div id="about-contact" class="main-text-content">
+                <h1>For the fastest response, Call or Text</h1>
+                <p>Office #: <a href="tel:+19417773747" class="undecorated-link">941-777-DRIP (3747)</a></p>
+                <p>Email: <a href="mailto:trustflowplumbing@gmail.com">trustflowplumbing@gmail.com</a></p>
+            </div>
+        </div>
+        <div id="about-locations" class="main-text-content">
+            <h1>OUR MAIN SERVICE AREAS:</h1>
+            <h2>Charlotte County</h2>
+            <ul id="location-list-cities">
+                <li>Port Charlotte</li>
+                <li>Murdock</li>
+                <li>Charlotte Harbor</li>
+                <li>Charlotte Park</li>
+                <li>Harbor Heights</li>
+                <li>Deep Creek</li>
+                <li>Punta Gorda</li>
+                <li>Englewood</li>
+                <li>Grove City</li>
+                <li>Manasota Key</li>
+                <li>El Jobean</li>
+                <li>Rotonda</li>
+                <li>Placida</li>
+                <li>Cape Haze</li>
+                <li>Boca Grande</li>
+                <li>Little Gasparilla Island</li>
+                <li>Don Pedro Island</li>
+                <li>Babcock Ranch</li>
+            </ul>
+            <h3>INCLUDING North Port, Venice, & Arcadia areas</h3>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>
