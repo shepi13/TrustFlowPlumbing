@@ -364,6 +364,17 @@ div.gallery-description {
     padding: 15px;
 }
 
+
+/* Formatting for about_new.html */
+
+.about-us-section {
+    height: 100%;
+}
+
+.about-body {
+    height: 100%;
+}
+
 /* Formatting for about.html content */
 
 #headshot-container {
