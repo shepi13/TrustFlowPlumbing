@@ -14,6 +14,7 @@
                 $('a[href="about.html"]').parents('li').addClass('active');
                 $('.about-next-section').click(next_element(true));
                 $('.about-previous-section').click(next_element(false));
+                $('.top-return').click(scroll_top);
             });
         })
 
@@ -28,6 +29,12 @@
                 }, 1000);
             });
         };
+        function scroll_top() {
+            next_id = 1;
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        }
     </script>
 </head>
 <body style="overflow:hidden; background-color: white;">
@@ -38,6 +45,7 @@
                 <img src="images/headshot.jpg"/>
                 <p id="headshot-text">Trevor Scott</p> 
                 <p>Owner and Master Plumber</p>
+                <a class="top-return"><button>Return to Top</button></a>
             </div>
         </div>
         <div id="about-main-1" class="main-text-content about-us-section">
