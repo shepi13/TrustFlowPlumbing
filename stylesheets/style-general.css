@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(236,204,162);
+    padding-top: 250px;
     height: 100%;
 }
 
@@ -18,8 +18,8 @@ body {
 }
 
 div#main-body {
-    padding-top: 250px;
     min-height: 850px;
+    background-color: #F0FFFF;
 }
 
 .row-flex {
@@ -68,19 +68,21 @@ div.content-right {
 }
 
 div.mid-separator-background {
-    background-color:lavender;
+    background-color: lavender;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
 /* Formatting for navbar/header in header.html */
 
-div#header-container {
+#header-container {
     width: 100%;
-    background-color: rgb(200,240,255);
+    /*background-color: rgb(200,240,255);*/
+    background-color: rgb(230,240,255);
     box-shadow: 5px 5px 5px rgba(0,0,50, 0.2);
     max-height: 300px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     position: fixed;
     left: 0;
     top: 0;
@@ -143,7 +145,7 @@ div#contact-info-top #contact-number {
     /*-webkit-text-fill-color:rgb(140,200,215);;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;*/
-    -webkit-text-fill-color:rgb(100,160,180);;
+    -webkit-text-fill-color:rgb(100,160,180);
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -154,7 +156,7 @@ div#nav-bar {
     box-shadow: 5px 5px 5px cadetblue;
     /*border: solid 1px mediumaquamarine;
     /*background-color:mediumaquamarine;*/
-    background-color: rgb(170,230,245);
+    background-color: rgb(180,230,245);
     border-radius: 4px;
     margin-right: -10px;
 }
@@ -323,15 +325,19 @@ div#index-location-header {
 div#index-services-header {
     padding-top: 20px;
     padding-bottom: 20px;
+    border-left: 10px solid darkorange;
+    background-color: rgb(230,240,255);
+    margin-left: 20px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.6)
+}
+
+div#index-services {
+    margin-top: 75px;
 }
 
 div#index-location-list {
     padding-bottom: 70px;
     padding-top: 20px;
-}
-
-div#index-separator-2 {
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 /* Formatting for gallery.html content */
@@ -362,6 +368,10 @@ div.gallery-image img {
 }
 div.gallery-description {
     padding: 15px;
+}
+div#index-separator-1 {
+    background-color:rgb(80,140,160);
+    color: white;
 }
 
 
