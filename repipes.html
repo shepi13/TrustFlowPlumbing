@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TrustFlow Plumbing</title>
+    <link href="stylesheets/style-general.css" rel="stylesheet" type="text/css"/>
+    <link href="stylesheets/style-small.css" rel="stylesheet" media="(max-width:1650px)", type="text/css"/>
+    <link href="stylesheets/style-tiny.css" rel="stylesheet" media="(max-width: 1200px)", type="text/css"/>
+    <link href="favicon.png" rel="shortcut icon"/>
+    <script src="includes/jquery-3.7.1.min.js"></script>
+    <script>
+        let slideIndex = 0;
+        function startSlideShow() {
+            let i;
+            let slides = document.getElementsByClassName("index-gallery-image-container");
+            for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex += 2;
+            slideIndex %= slides.length;
+            slides[slideIndex].style.display = "block";
+            slides[(slideIndex+1) % slides.length].style.display = "block";
+            setTimeout(startSlideShow, 12500);
+        }
+
+        $(document).ready(function(){
+            $('#header-container').load('includes/header.html', function(){
+                $('a[href="index.html"]').parents('li').addClass('active');
+            });
+            $('#footer-container').load('includes/footer.html');
+            startSlideShow();
+        })
+    </script>
+</head>
+<body>
+    <header id="header-container"></header>
+    <div id="main-body">
+        <div id="services-repipes" class="main-text-content">
+            <h2>Re-Pipes (Partial or Whole House)</h2>
+            <p>
+                All plumbing systems age and will eventually need to be replaced. Common causes that require a 
+                re-pipe include corroded copper or galvanized piping, brittle CPVC, or worn-out fittings. Instead 
+                of chipping up the home’s foundation for a localized repair, it is often more cost and time-effective 
+                to replace all the water piping with state-of-the-art Pex-A Uponor piping. This piping would be 
+                installed in the attic as opposed to underground and would only require minimal drywall removal 
+                for plumbing access. (Re-pipes do not include any drywall repair). All whole house re-pipes require 
+                a permit and inspection, to ensure that your home’s potable water system has been brought up to 
+                national code requirements.    
+            </p>
+            <p>
+                Re-pipes include:
+            </p>
+            <ul>
+                <li>All Piping Replaced with New Uponor Pex-A (25-Year Manufacturer’s Warranty)</li>
+                <li>New Outdoor Main Water Service</li>
+                <li>New Outdoor Hose Bibs with Vacuum Breakers</li>
+                <li>New Local Shut-Off Valves & Water Supply Lines at Every Fixture</li>
+                <li>New Recessed Ice Line to Refrigerator (Where Applicable)</li>
+                <li>New Recessed Washing Machine Outlet Box (Where Applicable)</li>
+                <li>All Outdoor Pipes Will be Painted (Can Color Match)</li>
+                <li>
+                    Existing Shower Valves Will Be Tied into the New Uponor Pex-A System 
+                    (This is the only tiny section of original piping that will be left 
+                    until the valve is replaced) 
+                </li>
+                <li>
+                    Optional Upgrades That Can be Installed During the Re-pipe at a Reduced Rate 
+                    if Needed or Desired (Must be disclosed ahead of time):
+                    <ul>
+                        <li>New Shower Valves</li>
+                        <li>New Water Heaters</li>
+                        <li>New Faucets</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="services-payments" class="main-text-content">
+            <p>Payment Due Upon Completion of Services</p>
+            <p>Accepted Forms of Payment: Cash / Check / PayPal / Zelle / Venmo</p>
+            <p>
+                $200 Emergency Dispatch Fee: 24/7 After-Hours Emergency Response, 
+                including non-emergency client immediate priority scheduling requests. 
+                Emergency Dispatch Fee applied at time of dispatch.
+            </p>
+            <p>
+                The total amount due on the invoice includes all taxes, permit & inspection fees, 
+                & disposal fees. We will perform all work in a professional and quality manner. 
+                This does not cover any manufacturer’s defects in materials/fixtures, & there is 
+                NO Warranty on Sewer Drain Line Augers.
+            </p>
+            <p>
+                If a defect in workmanship is discovered, we will remedy it at our sole expense.
+            </p>
+            <h3 id="services-warranty">
+                We at Trustflow Plumbing stand by our 1-Year Labor Warranty 
+            </h3>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>
