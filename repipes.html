@@ -9,47 +9,48 @@
     <link href="favicon.png" rel="shortcut icon"/>
     <script src="includes/jquery-3.7.1.min.js"></script>
     <script>
-        let slideIndex = 0;
-        function startSlideShow() {
-            let i;
-            let slides = document.getElementsByClassName("index-gallery-image-container");
-            for(i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex += 2;
-            slideIndex %= slides.length;
-            slides[slideIndex].style.display = "block";
-            slides[(slideIndex+1) % slides.length].style.display = "block";
-            setTimeout(startSlideShow, 12500);
-        }
-
         $(document).ready(function(){
             $('#header-container').load('includes/header.html', function(){
-                $('a[href="index.html"]').parents('li').addClass('active');
+                $('a[href="repipes.html"]').parents('li').addClass('active');
             });
             $('#footer-container').load('includes/footer.html');
-            startSlideShow();
         })
     </script>
 </head>
 <body>
     <header id="header-container"></header>
     <div id="main-body">
-        <div id="services-repipes" class="main-text-content">
-            <h2>Re-Pipes (Partial or Whole House)</h2>
-            <p>
-                All plumbing systems age and will eventually need to be replaced. Common causes that require a 
-                re-pipe include corroded copper or galvanized piping, brittle CPVC, or worn-out fittings. Instead 
-                of chipping up the home’s foundation for a localized repair, it is often more cost and time-effective 
-                to replace all the water piping with state-of-the-art Pex-A Uponor piping. This piping would be 
-                installed in the attic as opposed to underground and would only require minimal drywall removal 
-                for plumbing access. (Re-pipes do not include any drywall repair). All whole house re-pipes require 
-                a permit and inspection, to ensure that your home’s potable water system has been brought up to 
-                national code requirements.    
-            </p>
-            <p>
+        <div id="repipes-header">
+            <div class="image-container-center-align right-float content-right">
+                <div id="repipes-corrosion">
+                    <img src="images/jobpics/IMG_0573.jpeg"/> 
+                    <p>Corroded copper pipes</p>
+                </div>
+            </div>
+            <div id="services-repipes" class="main-text-content">
+                <h1>Re-Pipes (Partial or Whole House)</h1>
+                <p>
+                    All plumbing systems age and will eventually need to be replaced. Common causes that require a 
+                    re-pipe include corroded copper or galvanized piping, brittle CPVC, or worn-out fittings. 
+                </p>
+                <p>
+                    Instead of chipping up the home’s foundation for a localized repair, it is often more cost and time-effective 
+                    to replace all the water piping with state-of-the-art Pex-A Uponor piping. This piping would be 
+                    installed in the attic as opposed to underground and would only require minimal drywall removal 
+                    for plumbing access. (Re-pipes do not include any drywall repair). 
+                </p>
+                <h4>
+                    All whole house re-pipes require 
+                    a permit and inspection, to ensure that your home’s potable water system has been brought up to 
+                    national code requirements.
+                </h4>
+            </div>
+            <br clear="both">
+        </div>
+        <div id="repipes-services-list" class="main-text-content">
+            <h2>
                 Re-pipes include:
-            </p>
+            </h2>
             <ul>
                 <li>All Piping Replaced with New Uponor Pex-A (25-Year Manufacturer’s Warranty)</li>
                 <li>New Outdoor Main Water Service</li>
@@ -63,6 +64,7 @@
                     (This is the only tiny section of original piping that will be left 
                     until the valve is replaced) 
                 </li>
+                <hr>
                 <li>
                     Optional Upgrades That Can be Installed During the Re-pipe at a Reduced Rate 
                     if Needed or Desired (Must be disclosed ahead of time):
