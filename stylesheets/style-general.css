@@ -16,6 +16,10 @@ body {
 .page-header {
     text-align: center;
     font-style: italic;
+    font-size: 40px;
+    color: rgb(80,140,160);
+    margin-top: -50px;
+    text-transform: uppercase;
 }
 
 div#main-body {
@@ -390,10 +394,11 @@ div.services-list {
     border-left: 20px solid rgb(80,140,160);
 }
 
-#services-header {
-    font-size: 40px;
-    color: rgb(80,140,160);
-    margin-top: -50px;
+div.services-list ul {
+    font-size: 20px;
+}
+div.services-list ul li {
+    margin-top: 5px;
 }
 
 #payments-warranties {
@@ -423,16 +428,6 @@ div#repipes-services-list ul {
 }
 div#repipes-services-list ul li {
     margin-top: 10px;
-}
-
-/* Formatting for about_new.html */
-
-.about-us-section {
-    height: 100%;
-}
-
-.about-body {
-    height: 100%;
 }
 
 /* Formatting for about.html content */
