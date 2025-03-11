@@ -37,3 +37,6 @@ ul.nav-bar-web-list li {
 #headshot-container img {
     width: 250px;
 }
+#logo-story {
+    display: none;
+}
