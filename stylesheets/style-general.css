@@ -528,6 +528,44 @@ div#about-locations h2 {
     font-size: 29px;
 }
 
+/* Styles for our-team.html */
+
+div#team-intro {
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+div#team-intro p{
+    font-size: 20px;
+}
+div#team-intro strong {
+    font-size: 21px;
+}
+div#team-intro-left {
+    width:500px;
+    margin-top: 20px;
+}
+div#team-intro-right {
+    max-width: 1000px;
+    padding: 10px 10px 10px 20px;
+    box-shadow: inset 0px 0px 10px cadetblue;
+}
+div#team-story-separator {
+    height:40px;
+    background-color: rgb(236,204,162);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+div#story-header {
+    margin-top: 75px;
+}
+div.story-section {
+    font-size:18px;
+    padding-bottom: 10px;
+    max-width: 1150px;
+}
+div#logo-story {
+    width: 500px;
+    font-size: 14px;
+}
 /* Styling for footer.html */
 
 div#footer-container {
