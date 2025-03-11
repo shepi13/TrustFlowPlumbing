@@ -286,6 +286,10 @@ div#main-body {
 
 /* Formating for index.html content */
 
+div#index-intro {
+    max-width: 1650px; 
+}
+
 .index-fade {
     animation-name: index-fade;
     animation-duration: 0.5s;
@@ -396,6 +400,8 @@ div.gallery-description {
 div.services-list {
     margin-bottom: 40px;
     border-left: 20px solid rgb(80,140,160);
+    background-color: #f7f0eb;
+    box-shadow: 3px 3px 3px rgba(95, 158, 160, 0.6);
 }
 
 div.services-list ul {
