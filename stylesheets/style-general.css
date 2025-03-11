@@ -360,9 +360,13 @@ div.index-separator {
 /* Formatting for gallery.html content */
 
 div#gallery-main {
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 100px;
+    box-shadow: 0px 2px 4px 0px rgba(95, 158, 160, 0.4);
+    background-color: #EBF5F5;
 }
 
 div.gallery-row {
@@ -528,7 +532,7 @@ div#footer-container {
 div#copyright-notice {
     font-size: 15px;
     font-weight: 300;
-    padding: 25px 40px 40px 40px;
+    padding: 35px 40px 60px 40px;
 }
 
 div#footer-company-info {
