@@ -565,7 +565,13 @@ div.story-section {
 div#logo-story {
     width: 500px;
     font-size: 14px;
-    margin-left: 5%;
+    margin-left: 4%;
+    padding-left: 1%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6), 0px 0px 2px black;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    background-color: rgba(236,204,162, 0.2);
 }
 div#our-team-footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
