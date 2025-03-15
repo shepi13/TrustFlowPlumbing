@@ -58,6 +58,10 @@ div#main-body {
     float: right;
 }
 
+.small-text {
+    font-size: medium;
+}
+
 div.main-text-content {
     max-width: 1500px;
     padding-top: 0;
@@ -397,11 +401,20 @@ div.gallery-description {
 
 /* Formatting for services.html */
 
+div.services-body {
+    background-image: url("../images/test_background.png");
+    background-color: rgba(255,255,255,0.8) !important;
+    background-blend-mode: lighten;
+    margin-top: -100px;
+    padding-top: 100px;
+    background-size: 100%;
+}
 div.services-list {
-    margin-bottom: 40px;
-    border-left: 20px solid rgb(80,140,160);
-    background-color: #f7f0eb;
-    box-shadow: 3px 3px 3px rgba(95, 158, 160, 0.6);
+    margin-bottom: 70px;
+    border-left: 15px solid rgb(80,140,160);
+    background-color: hsl(25, 43%, 92%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    border-radius: 5%;
 }
 
 div.services-list ul {
@@ -410,7 +423,11 @@ div.services-list ul {
 div.services-list ul li {
     margin-top: 5px;
 }
-
+#services-header {
+    font-size: 45px;
+    color: rgb(60, 120, 140);
+    text-shadow: 2px 2px 2px black;
+}
 #payments-warranties {
     padding-top: 10px;
     padding-bottom: 0px;
@@ -435,6 +452,10 @@ div#repipes-corrosion img {
 
 div#repipes-services-list ul {
     font-size: 20px;
+}
+div#repipes-services-list ul hr {
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 div#repipes-services-list ul li {
     margin-top: 10px;
