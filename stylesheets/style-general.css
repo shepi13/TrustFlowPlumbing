@@ -176,7 +176,7 @@ div#nav-bar {
     box-shadow: 5px 5px 5px cadetblue;
     /*border: solid 1px mediumaquamarine;
     /*background-color:mediumaquamarine;*/
-    background-color: rgb(180,230,245);
+    background-color:hsl(195, 33%, 35%);
     border-radius: 4px;
     margin-right: -10px;
 }
@@ -213,19 +213,20 @@ ul.nav-bar-web-list li {
     margin: 5px;
     margin-left: 2px;
     margin-right: 2px;
+    color: white;
+    min-width: 120px;
+    min-height: 50px;
+    text-align: center;
 }
 
 ul.nav-bar-web-list li.active {
-    background-color: cadetblue;
+    background-color: #CEE;
     margin: 1px;
-    border: 4px solid cadetblue;
+    border: 4px solid #CEE;
     box-shadow: 2px 2px 2px rgba(0,0,0,.2);
     border-radius: 3px;
-}
-
-ul.nav-bar-web-list li.active a:hover {
-    border-radius: 3px;
-    background-color: #ADD;
+    color: black;
+    font-weight: 700;
 }
 
 ul.nav-bar-web-list li a {
@@ -236,14 +237,17 @@ ul.nav-bar-web-list li a {
     padding: 14px 16px;
 }
 
-ul.nav-bar-web-list li a:hover {
-    background-color: #CFF;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
-    border: 1px solid rgb(236,204,162);
-    margin: -1px;
+ul.nav-bar-weblist li:hover {
     border-radius: 2px;
+    font-weight: 700;
 }
-
+ul.nav-bar-web-list li:not(.active):hover {
+    border-bottom: 4px solid darkorange;
+}
+ul.nav-bar-web-list li.active:hover {
+    border-bottom: 4px solid black;
+    font-size: 19px;
+}
 #right-nav-element {
     float: right;
     border: 1px solid midnightblue;
@@ -267,24 +271,27 @@ ul.nav-bar-web-list li a:hover {
 div#main-body {
     background-color: white;
 }
-
 .dropdown-content {
-    padding-top:5px;
+    padding-top:12px;
     position: absolute;
     display: none;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    min-width: 250px;
 }
-
 .dropdown-links {
     box-shadow: inset 0px 0px 10px 2px rgb(0,50,50,0.4);
-    background-color: rgb(150,220,230);
+    background-color: #CEE;
 }
-
 .dropdown-links a {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+.dropdown-links a:hover {
+    font-size: 17px;
+    font-weight: 600;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
