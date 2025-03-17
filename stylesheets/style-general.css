@@ -592,9 +592,10 @@ div#team-intro-right {
     border-radius: 10px;
 }
 div#team-story-separator {
-    height:40px;
-    background-color: rgb(236,204,162);
-    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+    height:20px;
+    /*background-color: rgb(236,204,162);*/
+    background-color: black;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
 div#story-header {
     margin-top: 75px;
