@@ -13,13 +13,14 @@ body {
     padding-top: 250px;
 }
 
-.page-header {
+div.page-header {
     text-align: center;
     font-style: italic;
     font-size: 40px;
     color: rgb(80,140,160);
     margin-top: -50px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
 }
 
 div#main-body {
@@ -426,7 +427,6 @@ div.services-list ul li {
 #services-header {
     font-size: 45px;
     color: rgb(60, 120, 140);
-    text-shadow: 2px 2px 2px black;
 }
 #payments-warranties {
     padding-top: 10px;
@@ -551,9 +551,19 @@ div#about-locations h2 {
 
 /* Styles for our-team.html */
 
+div#team-header {
+    background-image: url(../images/sunset-copy.png);
+    background-color: rgba(235,245,255, .3) !important;
+    background-blend-mode: lighten;
+    background-size: auto 800px;
+    background-position: left top;
+    margin-top: -400px;
+    padding-top: 400px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+}
 div#team-intro {
     padding-bottom: 5px;
-    margin-bottom: 50px;
 }
 div#team-intro p{
     font-size: 20px;
@@ -563,12 +573,23 @@ div#team-intro strong {
 }
 div#team-intro-left {
     width:500px;
-    margin-top: 20px;
+    margin-top: -20px;
+    color: rgba(235, 245, 255, .8);
+}
+div#team-intro-left h2 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div#team-intro-left h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 div#team-intro-right {
     max-width: 1000px;
     padding: 10px 10px 10px 20px;
-    box-shadow: inset 0px 0px 10px cadetblue;
+    box-shadow: 0px 0px 10px cadetblue;
+    background-color: rgba(235, 245, 255, .95);
+    border-radius: 10px;
 }
 div#team-story-separator {
     height:40px;
