@@ -99,7 +99,7 @@ div.mid-separator-background {
 #header-container {
     width: 100%;
     /*background-color: rgb(200,240,255);*/
-    background-color: rgb(230,240,255);
+    background-color: hsl(216, 100%, 97%);
     box-shadow: 5px 5px 5px rgba(0,0,50, 0.2);
     max-height: 300px;
     padding-bottom: 0px;
