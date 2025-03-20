@@ -1,5 +1,5 @@
 div#header-container {
-    position: static;
+    position: static !important;
 }
 
 div#main-body {

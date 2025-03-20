@@ -369,7 +369,7 @@ div#index-location-list {
 }
 
 div.index-separator {
-    background-color:rgb(80,140,160);
+    background-color:hsl(195, 33%, 35%);
     color: white;
 }
 
